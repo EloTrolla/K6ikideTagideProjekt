@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <title>VS15_EloTrolla_K6ikideTagideProjekt</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+
+<body>
+
+
+
+<p>Kuidas saada häkkeriks? Registreeri kasutajaks ja hakka õppima <abbr title="Hack This Site"><a href="https://www.hackthissite.org/">HTS</a></abbr> foorumis!</p>
+<br>
+
+
+
+<p>Peaaegu tagasi tulevikus :)<br>
+Vajuta hoverboard'ile ja tossudele.</p>
+
+<img src="Pildid/backtothefuture-hoverboard.jpg" width="399" height="150" alt="TagasiTulevikus" usemap="#TagasiTulevikus">
+
+<map name="TagasiTulevikus">
+    <area alt="Hoverboard" title="Hoverboard" href="https://goo.gl/F74xCY" shape="poly" coords="2,132,44,148,110,21,74,6" />
+    <area alt="NikeMAG" title="NikeMAG" href="http://goo.gl/yZrM8c" shape="poly" coords="242,75,330,96,367,80,347,18,292,9,292,39" />
+</map>
+<br>
+<br>
+<br>
+
+
+
+<article>
+    <h3>< article > tag</h3>
+    <p>< article > tag võtab sisu kokku iseseisva osana/blokina.</p>
+</article>
+
+
+
+<aside>
+    <h3> < aside > tag</h3>
+    <p>Eraldab valitud osa ülejäänud lehe sisust.</p>
+</aside>
+
+
+<h3>Pane siia audiofail!</h3>
+<audio controls>
+    <source src="horse.ogg" type="audio/ogg">
+    <source src="horse.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+<br>
+
+
+
+<b>Paks tekst on paks.</b>
+
+
+
+<h3>Base tag tee siia</h3>
+
+
+
+<h3>< bdi > tag</h3>
+Mittestandarse teksti jaoks. Isoleerib teksti osa, mille formaati brauser võib muuta.<br>
+Näiteks nii: bla bla <bdi>إيان</bdi> 76 bla bla<br>
+bla bla: إيان 76 bla bla. <-- ei lase numbrit märgi taha panna, vaid paneb ette.</p>
+
+
+
+<h3>< bdo> tag</h3>
+<p><bdo dir="rtl">Pöörab teksti paremalt vasakule.</bdo></p>
+
+
+
+<h3>< blockquote ></h3>
+<blockquote cite="http://www.w3schools.org">
+    Tsitaati eraldav blokk. Tagide sisse pannakse ka tsitaadi allika aadress.
+</blockquote>
+<br>
+
+
+
+<button type="button" onclick="alert('Sulle meeldib nuppe vajutada. Kindlasti meeldib sulle ka mullikile!')">Vajuta siia!</button>
+
+
+
+
+<h3>< canvas > tag</h3>
+<p>Sellega saab joonistada</p>
+
+<canvas id="myCanvas2" width="200" height="100"
+        style="border:1px solid #000000;">
+</canvas>
+
+<script>
+    var canvas = document.getElementById("myCanvas2");
+    var ctx = canvas.getContext("2d");
+    ctx.fillStyle = "#FF3300";
+    ctx.fillRect(0,0,150,75);
+</script>
+
+<script>
+    var canvas = document.getElementById("myCanvas2");
+    var ctx = canvas.getContext("2d");
+    ctx.fillStyle = "#199A19";
+    ctx.fillRect(20,30,170,55);
+</script>
+
+
+<h3>< caption > tag</h3>
+<p>Tabeli pealkiri</p>
+<table border="1px solid black">
+    <caption>Tabeli pealkiri on see</caption>
+    <tr>
+        <th>Yks tulp</th>
+        <th>Teine tulp</th>
+    </tr>
+    <tr>
+        <td>rida1</td>
+        <td>rida11</td>
+    </tr>
+    <tr>
+        <td>rida2</td>
+        <td>rida22</td>
+    </tr>
+</table>
+<br>
+
+
+
+<h3>< cite > tag</h3>
+<p>Teose pealkiri</p>
+<img src="Pildid/VanGoghTheStarryNight.jpg">
+<p><cite>The Starry Night</cite> Vincent Willem van Gogh. Painted in 1889.</p>
+
+
+
+<h3>Phrase tags</h3>
+<table>
+    <tr>
+        <td>< code ></td>
+        <td><code>Tekstis eristatakse/tähistatakse programmi koodi sellise kirjatüübiga</code></td>
+    </tr>
+
+    <tr>
+        <td>< em ></td>
+        <td><em>Renders as emphasized text</em></td>
+    </tr>
+
+
+    <tr>
+        <td>< strong ></td>
+        <td><strong>Defines important text</strong></td>
+    </tr>
+
+    <tr>
+        <td>< samp ></td>
+        <td><samp>Defines sample output from a computer program</samp></td>
+    </tr>
+
+    <tr>
+        <td>< kbd ></td>
+        <td><kbd>Defines keyboard input</kbd></td>
+    </tr>
+
+    <tr>
+        <td>< var ></td>
+        <td><var>Defines a variable</var><br></td>
+    </tr>
+
+</table>
+
+
+
+
+
+
+<h3>< col > < colgroup > tag</h3>
+
+<p>Sellega saab tabeli iga tulba omadusi eraldi muuta, selle asemel,
+    et muuta eraldi tabeli kaste. Värvid ja ulatus määratakse ära < colgroup > tagide vahel.</p>
+<table>
+    <colgroup>
+        <col style="background-color:yellowgreen">
+        <col style="background-color:yellow">
+        <col span="2" style="background-color:greenyellow">
+    </colgroup>
+    <tr>
+        <th>Rohekollane</th>
+        <th>Kollane</th>
+        <th>Kollaroheline1</th>
+        <th>Kollaroheline2</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>6</td>
+        <td>7</td>
+        <td>8</td>
+    </tr>
+</table>
+
+
+<h3>< input > < datalist > tagid</h3>
+
+<p>The < datalist > tag specifies a list of pre-defined options for an < input > element.
+    The < datalist > tag is used to provide an "autocomplete" feature on < input > elements. Users will see a drop-down
+    list of pre-defined options as they input data.
+    Use the < input > element's list attribute to bind it together with a < datalist > element.</p>
+
+<form action="demo_form.asp" method="get">
+    <input list="v2rvid" name="v2rvid">
+    <datalist id="v2rvid">
+        <option value="Sinine">
+        <option value="Punane">
+        <option value="Kollane">
+        <option value="Roheline">
+        <option value="Must">
+    </datalist>
+    <input type="submit">
+</form>
+
+
+<h3> < dd > < dl > < dt > tag</h3>
+
+<p>The < dd> tag is used to describe a term/name in a description list.
+    The < dd> tag is used in conjunction with < dl> (defines a description list) and < dt> (defines terms/names).
+    Inside a < dd> tag you can put paragraphs, line breaks, images, links, lists, etc.</p>
+
+<dl>
+    <dt>Kaslased</dt>
+    <dd>Tiiger, l6vi, panter, gepard...</dd>
+    <dt>Puud</dt>
+    <dd>Tamm, kask, pihlakas, lehis...</dd>
+</dl>
+
+
+
+<h3> < del > < ins ></h3>
+
+<p>del t2histab teksti, mis on dokumendist
+    <del>leitud</del>
+    kustutatud ning ins -
+    <ins>lisatud</ins>
+    .
+</p>
+
+
+<h3>< details > </h3>
+
+<details>
+    <summary>Detailid.</summary>
+    <p>on peidetud.</p>
+
+    <p>aga ainult Safari 6, Opera ja Chrome brauserites.</p>
+</details>
+
+
+<h3>< dfn ></h3>
+
+<p><dfn>HTML</dfn> is the standard markup language for creating web pages.</p>
+
+<p>The < dfn> tag represents the defining instance of a term in HTML.
+    The defining instance is often the first use of a term in a document.
+    The nearest parent of the < dfn> tag must also contain the definition/explanation for the term inside < dfn>.</p>
+
+
+
+<h3>< div ></h3>
+
+<p>Võtab sisu kokku, ühte blokki. Ja seda blokki saab eraldi kujundada.</p>
+
+<div style="color:#0000FF">
+    <h3>Siin on üks näide</h3>
+
+    <p>Kuidas div blokki kujundada saab.</p>
+</div>
+
+
+
+<h3>< fieldset > < form > < legend > < input ></h3>
+<p>< fieldset > grupeerib vormi elemendid <br>
+    < legend > fieldset'i vormi pealkiri <br>
+    < form > annab sisestuse..tabelile/aknale html vormingu <br>
+    < input > The < input > tag specifies an input field where the user can enter data.
+    < input > elements are used within a < form > element to declare input controls that allow users to input data.
+</p>
+<form>
+    <fieldset>
+        <legend>Andmed:</legend>
+        V2rv: <input type="text"><br>
+        Suurus: <input type="text"><br>
+        Valmistamise kuup2ev: <input type="text">
+    </fieldset>
+</form>
+
+
+
+<h3>< header ></h3>
+<p>V6tab kokku/grupeerib teksti (lehe sissejuhatuse v]i navigatsioonibloki vms).
+Sinna l'heb logo, ikoon jms info, mis on t'htsam.</p>
+<header>
+    <h1>Pealkiri</h1>
+    <h3>Alapealkiri</h3>
+    <p>Tekst l'heb siia.</p>
+</header>
+
+
+
+<h3>< i ></h3>
+<p>Teksti osa <i>r]hutamiseks</i>, kui pole muud sobivamat tag'i.</p>
+
+
+<h3>< iframe ></h3>
+<p>The < iframe > tag specifies an inline frame.</p>
+<iframe src="http://www.postimees.ee">
+    <p>Sinu brauser ei toeta iframe'i.</p>
+</iframe>
+
+
+
+<h3>< keygen ></h3>
+
+
+
+
+<h3>< label ></h3>
+<p>The < label > element does not render as anything special for the user.
+    However, it provides a usability improvement for mouse users,
+    because if the user clicks on the text within the < label > element, it toggles the control.</p>
+<form action="demo_form.asp">
+    <label for="kana">Kana</label>
+    <input type="radio" name="liik" id="kana" value="lind"><br>
+    <label for="kala">Kala</label>
+    <input type="radio" name="liik" id="kala" value="loom"><br><br>
+    <input type="submit" value="submit">
+</form>
+
+
+
+<h3>< main ></h3>
+<p>lisa see veel lehele kuskile</p>
+
+
+
+<h3>< mark ></h3>
+<p>Kui on vaja tekstis midagi <mark>esile tuua, nt v'rviga</mark>, siis kasutatakse seda tag'i.</p>
+
+
+
+<h3>< meter ></h3>
+<p>Väike mõõdik (täienda veel):
+    The < meter > tag defines a scalar measurement within a known range,
+        or a fractional value. This is also known as a gauge.</p>
+<meter value="2" min="0" max="10">2 out of 10</meter><br>
+<meter value="0.6">60%</meter>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<hr>
+<address>
+    Kõikide tag'ide veebilehe autor: <a href="mailto:elo.trolla@khk.ee">Elo Trolla</a>.<br>
+    Tartu KHK<br>
+    Kursus VS15<br>
+    2015
+</address>
+
+</body>
+</html>
