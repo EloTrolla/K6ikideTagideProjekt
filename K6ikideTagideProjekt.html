@@ -9,41 +9,46 @@
 <body>
 
 
-
-<p>Kuidas saada häkkeriks? Registreeri kasutajaks ja hakka õppima <abbr title="Hack This Site"><a href="https://www.hackthissite.org/">HTS</a></abbr> foorumis!</p>
+<p>Kuidas saada häkkeriks? Registreeri kasutajaks ja hakka õppima <abbr title="Hack This Site"><a
+        href="https://www.hackthissite.org/">HTS</a></abbr> foorumis!</p>
 <br>
 
 
-
 <p>Peaaegu tagasi tulevikus :)<br>
-Vajuta hoverboard'ile ja tossudele.</p>
+    Vajuta hoverboard'ile ja tossudele.</p>
 
-<img src="Pildid/backtothefuture-hoverboard.jpg" width="399" height="150" alt="TagasiTulevikus" usemap="#TagasiTulevikus">
+<img src="Pildid/backtothefuture-hoverboard.jpg" width="399" height="150" alt="TagasiTulevikus"
+     usemap="#TagasiTulevikus">
 
 <map name="TagasiTulevikus">
-    <area alt="Hoverboard" title="Hoverboard" href="https://goo.gl/F74xCY" shape="poly" coords="2,132,44,148,110,21,74,6" />
-    <area alt="NikeMAG" title="NikeMAG" href="http://goo.gl/yZrM8c" shape="poly" coords="242,75,330,96,367,80,347,18,292,9,292,39" />
+    <area alt="Hoverboard" title="Hoverboard" href="https://goo.gl/F74xCY" shape="poly"
+          coords="2,132,44,148,110,21,74,6"/>
+    <area alt="NikeMAG" title="NikeMAG" href="http://goo.gl/yZrM8c" shape="poly"
+          coords="242,75,330,96,367,80,347,18,292,9,292,39"/>
 </map>
 <br>
 <br>
 <br>
 
 
-
 <article>
     <h3>< article > tag</h3>
+
     <p>< article > tag võtab sisu kokku iseseisva osana/blokina.</p>
 </article>
 
 
-
 <aside>
     <h3> < aside > tag</h3>
+
     <p>Eraldab valitud osa ülejäänud lehe sisust.</p>
 </aside>
 
 
-<h3>Pane siia audiofail!</h3>
+<h3>Pane siia audiofail! < audio > < source ></h3>
+<p>< source > määratleb mitmeid meediatüüpe nagu < video > < audio >. <br>
+    Võimaldab valida, milliseid audio/videofaile brauseris mängida, olenevalt meediatüübist või selle toetusest.<br>
+< audio > Määratleb heli, mis failitüüp on.</p>
 <audio controls>
     <source src="horse.ogg" type="audio/ogg">
     <source src="horse.mp3" type="audio/mpeg">
@@ -52,25 +57,20 @@ Vajuta hoverboard'ile ja tossudele.</p>
 <br>
 
 
-
-<b>Paks tekst on paks.</b>
-
-
-
 <h3>Base tag tee siia</h3>
-
 
 
 <h3>< bdi > tag</h3>
 Mittestandarse teksti jaoks. Isoleerib teksti osa, mille formaati brauser võib muuta.<br>
-Näiteks nii: bla bla <bdi>إيان</bdi> 76 bla bla<br>
+Näiteks nii: bla bla
+<bdi>إيان</bdi>
+76 bla bla<br>
 bla bla: إيان 76 bla bla. <-- ei lase numbrit märgi taha panna, vaid paneb ette.</p>
 
 
-
 <h3>< bdo> tag</h3>
-<p><bdo dir="rtl">Pöörab teksti paremalt vasakule.</bdo></p>
 
+<p><bdo dir="rtl">Pöörab teksti paremalt vasakule.</bdo></p>
 
 
 <h3>< blockquote ></h3>
@@ -80,13 +80,13 @@ bla bla: إيان 76 bla bla. <-- ei lase numbrit märgi taha panna, vaid paneb 
 <br>
 
 
-
-<button type="button" onclick="alert('Sulle meeldib nuppe vajutada. Kindlasti meeldib sulle ka mullikile!')">Vajuta siia!</button>
-
-
+<button type="button" onclick="alert('Sulle meeldib nuppe vajutada. Kindlasti meeldib sulle ka mullikile!')">Vajuta
+    siia!
+</button>
 
 
 <h3>< canvas > tag</h3>
+
 <p>Sellega saab joonistada</p>
 
 <canvas id="myCanvas2" width="200" height="100"
@@ -97,43 +97,52 @@ bla bla: إيان 76 bla bla. <-- ei lase numbrit märgi taha panna, vaid paneb 
     var canvas = document.getElementById("myCanvas2");
     var ctx = canvas.getContext("2d");
     ctx.fillStyle = "#FF3300";
-    ctx.fillRect(0,0,150,75);
+    ctx.fillRect(0, 0, 150, 75);
 </script>
 
 <script>
     var canvas = document.getElementById("myCanvas2");
     var ctx = canvas.getContext("2d");
     ctx.fillStyle = "#199A19";
-    ctx.fillRect(20,30,170,55);
+    ctx.fillRect(20, 30, 170, 55);
 </script>
 
 
 <h3>< caption > tag</h3>
+
 <p>Tabeli pealkiri</p>
 <table border="1px solid black">
     <caption>Tabeli pealkiri on see</caption>
+    <thead>
     <tr>
         <th>Yks tulp</th>
         <th>Teine tulp</th>
     </tr>
+    </thead>
+
+    <tbody>
     <tr>
         <td>rida1</td>
         <td>rida11</td>
     </tr>
+    </tbody>
+
+    <tfoot>
     <tr>
         <td>rida2</td>
         <td>rida22</td>
     </tr>
+    </tfoot>
 </table>
 <br>
 
 
-
 <h3>< cite > tag</h3>
+
 <p>Teose pealkiri</p>
 <img src="Pildid/VanGoghTheStarryNight.jpg">
-<p><cite>The Starry Night</cite> Vincent Willem van Gogh. Painted in 1889.</p>
 
+<p><cite>The Starry Night</cite> Vincent Willem van Gogh. Painted in 1889.</p>
 
 
 <h3>Phrase tags</h3>
@@ -170,10 +179,7 @@ bla bla: إيان 76 bla bla. <-- ei lase numbrit märgi taha panna, vaid paneb 
     </tr>
 
 </table>
-
-
-
-
+<b>Paks tekst on paks.</b>
 
 
 <h3>< col > < colgroup > tag</h3>
@@ -241,7 +247,6 @@ bla bla: إيان 76 bla bla. <-- ei lase numbrit märgi taha panna, vaid paneb 
 </dl>
 
 
-
 <h3> < del > < ins ></h3>
 
 <p>del t2histab teksti, mis on dokumendist
@@ -252,8 +257,8 @@ bla bla: إيان 76 bla bla. <-- ei lase numbrit märgi taha panna, vaid paneb 
 </p>
 
 
-<h3>< details > </h3>
-
+<h3>< details > < summary ></h3>
+<p>summary - detailide pealkiri, nähtav osa.</p>
 <details>
     <summary>Detailid.</summary>
     <p>on peidetud.</p>
@@ -271,7 +276,6 @@ bla bla: إيان 76 bla bla. <-- ei lase numbrit märgi taha panna, vaid paneb 
     The nearest parent of the < dfn> tag must also contain the definition/explanation for the term inside < dfn>.</p>
 
 
-
 <h3>< div ></h3>
 
 <p>Võtab sisu kokku, ühte blokki. Ja seda blokki saab eraldi kujundada.</p>
@@ -283,14 +287,15 @@ bla bla: إيان 76 bla bla. <-- ei lase numbrit märgi taha panna, vaid paneb 
 </div>
 
 
-
 <h3>< fieldset > < form > < legend > < input ></h3>
+
 <p>< fieldset > grupeerib vormi elemendid <br>
     < legend > fieldset'i vormi pealkiri <br>
     < form > annab sisestuse..tabelile/aknale html vormingu <br>
     < input > The < input > tag specifies an input field where the user can enter data.
     < input > elements are used within a < form > element to declare input controls that allow users to input data.
 </p>
+
 <form>
     <fieldset>
         <legend>Andmed:</legend>
@@ -301,39 +306,41 @@ bla bla: إيان 76 bla bla. <-- ei lase numbrit märgi taha panna, vaid paneb 
 </form>
 
 
-
 <h3>< header ></h3>
+
 <p>V6tab kokku/grupeerib teksti (lehe sissejuhatuse v]i navigatsioonibloki vms).
-Sinna l'heb logo, ikoon jms info, mis on t'htsam.</p>
+    Sinna l'heb logo, ikoon jms info, mis on t'htsam.</p>
 <header>
     <h1>Pealkiri</h1>
+
     <h3>Alapealkiri</h3>
+
     <p>Tekst l'heb siia.</p>
 </header>
 
 
-
 <h3>< i ></h3>
+
 <p>Teksti osa <i>r]hutamiseks</i>, kui pole muud sobivamat tag'i.</p>
 
 
 <h3>< iframe ></h3>
+
 <p>The < iframe > tag specifies an inline frame.</p>
 <iframe src="http://www.postimees.ee">
     <p>Sinu brauser ei toeta iframe'i.</p>
 </iframe>
 
 
-
 <h3>< keygen ></h3>
 
 
-
-
 <h3>< label ></h3>
+
 <p>The < label > element does not render as anything special for the user.
     However, it provides a usability improvement for mouse users,
     because if the user clicks on the text within the < label > element, it toggles the control.</p>
+
 <form action="demo_form.asp">
     <label for="kana">Kana</label>
     <input type="radio" name="liik" id="kana" value="lind"><br>
@@ -343,23 +350,197 @@ Sinna l'heb logo, ikoon jms info, mis on t'htsam.</p>
 </form>
 
 
-
 <h3>< main ></h3>
+
 <p>lisa see veel lehele kuskile</p>
 
 
-
 <h3>< mark ></h3>
-<p>Kui on vaja tekstis midagi <mark>esile tuua, nt v'rviga</mark>, siis kasutatakse seda tag'i.</p>
 
+<p>Kui on vaja tekstis midagi
+    <mark>esile tuua, nt v'rviga</mark>
+    , siis kasutatakse seda tag'i.
+</p>
 
 
 <h3>< meter ></h3>
+
 <p>Väike mõõdik (täienda veel):
     The < meter > tag defines a scalar measurement within a known range,
-        or a fractional value. This is also known as a gauge.</p>
-<meter value="2" min="0" max="10">2 out of 10</meter><br>
+    or a fractional value. This is also known as a gauge.</p>
+<meter value="2" min="0" max="10">2 out of 10</meter>
+<br>
 <meter value="0.6">60%</meter>
+
+
+<h3>< nav ></h3>
+
+<p>< nav > blokk on lehel navigeerimiseks, peamised viited teistele suurematele tähtsamatele lehtedele.</p>
+<nav>
+    <a href="/avaleht/">Avaleht</a> |
+    <a href="/sisukord/">Sisukord</a> |
+    <a href="/ylesanded/">Ülesanded</a> |
+    <a href="/vlmidagi/">Veel midagi</a>
+</nav>
+
+<nav>
+    <a href=""></a>
+    <a href=""></a>
+    <a href=""></a>
+    <a href=""></a>
+</nav>
+
+
+<h3>< script > < noscript ></h3>
+
+<p>The < noscript > tag defines an alternate content for users that have disabled scripts in
+    their browser or have a browser that doesn't support script.</p>
+
+
+<h3>< ol > < ul > < li ></h3>
+
+<ul>
+    <li>ol - ordered list</li>
+    <li>ul - unordered list</li>
+    <li>li - list item</li>
+</ul>
+
+<ol>
+    <li>nummerdatud (ol)</li>
+    <li>list</li>
+    <li>on selline</li>
+</ol>
+
+
+<h3>< select > < optgroup > < option ></h3>
+
+<p> < select > saab teha rippmenüüd.<br>
+    < optgroup > saab rippmenüüs grupeerida sarnased elemendid ühe nimetaja alla.
+    On kasutajale mugav siis, kui nimekiri on väga pikk.<br>
+    < option > select listis tähistab rippmenüüs kuvatavat valikut.</p>
+<select>
+    <optgroup label="Kaslased (Felidae)">
+        <option value="Tiiger">Tiiger</option>
+        <option value="Gepard">Gepard</option>
+    </optgroup>
+    <optgroup label="Koerlased (Canidae)">
+        <option value="Hunt">Hunt</option>
+        <option value="Rebane">Rebane</option>
+    </optgroup>
+</select>
+
+
+<h3>< output ></h3>
+
+<p>represents the result of a calculation</p>
+
+<form oninput="x.value=parseInt(a.value)+parseInt(b.value)">0
+    <input type="range" id="a" value="50">100
+    +<input type="number" id="b" value="50">
+    =
+    <output name="x" for="a b"></output>
+</form>
+
+
+<h3>< param > < object ></h3>
+
+<p>PANE SIIA AUDIOFAIL<br>
+    The < object > tag defines an embedded object within an HTML document.
+    Use this element to embed multimedia (like audio, video, Java applets,
+    ActiveX, PDF, and Flash) in your web pages</p>
+<object data="horse.wav">
+    <param name="autoplay" value="true">
+</object>
+
+
+<h3>< pre ></h3>
+<pre>
+    Tekst pre elemendis kuvatakse
+monospace kirjastiiliga ja see
+säilitab kõik        tühikud ja
+reavahed
+</pre>
+
+
+<h3>< sub > < sup ></h3>
+<p>Siin tekstis on <sub>alaindeks</sub>.</p>
+<p>Siin tekstis on <sup>ülaindeks</sup>.</p>
+
+
+<h3>< progress ></h3>
+<p>< progress > näitab nt mingi ülesande progressi, palju tehtud on</p>
+<progress value="35" max="100">
+</progress>
+
+
+<h3>< q ></h3>
+<p>Kasutatakse tsitaatide jaoks: < q >
+    <q>Taevast sajab laia lund!</q>  < /q >
+    </p>
+
+
+<h3>< s ></h3>
+<p> Kasutatakse siis, kui algne tekst ei ole enam õige, info on vananenud.</p>
+<p><s>Jüri ja Joosep</s> Mari ja Kadri elavad Tartus.</p>
+
+
+<h3>< section ></h3>
+<p>Tähistab teksti osasid, kas peatükke, päist, jalust või muud osa.</p>
+<section>
+    <h4>Pealkiri</h4>
+    <p>blablablablablablablablabalbalbalbalbalbalba
+    blablabalbalbalbalbalbalabalbalbalbalbalab</p>
+</section>
+
+<section>
+    <h4>Pealkiri 2</h4>
+    <p>blablablablablbalbalbalbablalbablablablablablablablablbalbalbalbabla</p>
+</section>
+
+
+<h3>< small ></h3>
+<p>Teeb teksti väikseks.</p>
+<p><small>Näiteks kõrvalkommentaaride jaoks.</small></p>
+
+
+<h3>< u ></h3>
+<p>Tähistab teksti, mis peaks olema tavatekstist stiililiselt erinev, nt grammatiliselt mittekorrekte kiri vms.</p>
+<p>This is a <u>parragraph</u>.</p>
+
+
+<h3>< wbr ></h3>
+<p>Poolitab sõna just seal, kus see tag vahel on. Kasulik nt veebilehitseja akna suuruse muutmisel.</p>
+<p>This is a veryveryveryveryveryveryveryveryveryveryveryveryveryveryveryv
+    eryveryvery<wbr>longwordthatwillbreakatspecific<wbr>placeswhenthebrowserwindowisresized.</p>
+
+
+
+<h3>< span ></h3>
+<p>Kasutatakse inline-elementide grupeerimiseks, sellega saab muuta tekstis ära märgitud osa.</p>
+<p>Pätul on <span style="color:blue;font-weight:bold">sinine</span> pall ja Tukil on <span style="color:darkolivegreen;font-weight:bold">tumeroheline</span> pall.</p>
+
+
+
+<h3>< style ></h3>
+<p>< style > tagide vahel määratakse dokumendi stiilielemendid, milline peab lehekülg välja nägema veebilehitsejas.</p>
+<p>< head ><br>
+    < style ><br>
+        h1 {color:red;}<br>
+        p {color:blue;}<br>
+    < /style ><br>
+< /head ></p>
+
+
+
+<h3>< textarea ></h3>
+<textarea rows="4" cols="50">
+The < textarea > tag defines a multi-line text input control.
+
+A text area can hold an unlimited number of characters, and the text renders in a fixed-width font (usually Courier).
+
+The size of a text area can be specified by the cols and rows attributes, or even better; through CSS' height and width properties.
+</textarea>
+
 
 
 
