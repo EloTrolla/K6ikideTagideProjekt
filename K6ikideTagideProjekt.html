@@ -8,24 +8,27 @@
 
 <body>
 
+<div class="relative">
 
-<p>Kuidas saada häkkeriks? Registreeri kasutajaks ja hakka õppima <abbr title="Hack This Site"><a
-        href="https://www.hackthissite.org/">HTS</a></abbr> foorumis!</p>
-<br>
+    <p>Kuidas saada häkkeriks? Registreeri kasutajaks ja hakka õppima <abbr title="Hack This Site"><a
+            href="https://www.hackthissite.org/">HTS</a></abbr> foorumis!</p>
+    <br>
 
+    <div class="absolute">
+        <p>Peaaegu tagasi tulevikus :)<br>
+            Vajuta hoverboard'ile ja tossudele.</p>
 
-<p>Peaaegu tagasi tulevikus :)<br>
-    Vajuta hoverboard'ile ja tossudele.</p>
+        <img src="Pildid/backtothefuture-hoverboard.jpg" width="399" height="150" alt="TagasiTulevikus"
+             usemap="#TagasiTulevikus">
 
-<img src="Pildid/backtothefuture-hoverboard.jpg" width="399" height="150" alt="TagasiTulevikus"
-     usemap="#TagasiTulevikus">
-
-<map name="TagasiTulevikus">
-    <area alt="Hoverboard" title="Hoverboard" href="https://goo.gl/F74xCY" shape="poly"
-          coords="2,132,44,148,110,21,74,6"/>
-    <area alt="NikeMAG" title="NikeMAG" href="http://goo.gl/yZrM8c" shape="poly"
-          coords="242,75,330,96,367,80,347,18,292,9,292,39"/>
-</map>
+        <map name="TagasiTulevikus">
+            <area alt="Hoverboard" title="Hoverboard" href="https://goo.gl/F74xCY" shape="poly"
+                  coords="2,132,44,148,110,21,74,6"/>
+            <area alt="NikeMAG" title="NikeMAG" href="http://goo.gl/yZrM8c" shape="poly"
+                  coords="242,75,330,96,367,80,347,18,292,9,292,39"/>
+        </map>
+    </div>
+</div>
 <br>
 <br>
 <br>
@@ -46,9 +49,10 @@
 
 
 <h3>Pane siia audiofail! < audio > < source ></h3>
+
 <p>< source > määratleb mitmeid meediatüüpe nagu < video > < audio >. <br>
     Võimaldab valida, milliseid audio/videofaile brauseris mängida, olenevalt meediatüübist või selle toetusest.<br>
-< audio > Määratleb heli, mis failitüüp on.</p>
+    < audio > Määratleb heli, mis failitüüp on.</p>
 <audio controls>
     <source src="horse.ogg" type="audio/ogg">
     <source src="horse.mp3" type="audio/mpeg">
@@ -59,27 +63,30 @@
 
 <h3>Base tag tee siia</h3>
 
-
-<h3>< bdi > tag</h3>
-Mittestandarse teksti jaoks. Isoleerib teksti osa, mille formaati brauser võib muuta.<br>
-Näiteks nii: bla bla
-<bdi>إيان</bdi>
-76 bla bla<br>
-bla bla: إيان 76 bla bla. <-- ei lase numbrit märgi taha panna, vaid paneb ette.</p>
+<div class="opacity">
+    <h3>< bdi > tag</h3>
+    Mittestandarse teksti jaoks. Isoleerib teksti osa, mille formaati brauser võib muuta.<br>
+    Näiteks nii: bla bla
+    <bdi>إيان</bdi>
+    76 bla bla<br>
+    bla bla: إيان 76 bla bla. <-- ei lase numbrit märgi taha panna, vaid paneb ette.</p>
+</div>
 
 
 <h3>< bdo> tag</h3>
 
 <p><bdo dir="rtl">Pöörab teksti paremalt vasakule.</bdo></p>
 
-
-<h3>< blockquote ></h3>
-<blockquote cite="http://www.w3schools.org">
-    Tsitaati eraldav blokk. Tagide sisse pannakse ka tsitaadi allika aadress.
-</blockquote>
+<div class="taust">
+    <h3>< blockquote ></h3>
+    <blockquote cite="http://www.w3schools.org">
+        Tsitaati eraldav blokk. Tagide sisse pannakse ka tsitaadi allika aadress.
+    </blockquote>
+</div>
 <br>
 
 
+<h3>< button ></h3>
 <button type="button" onclick="alert('Sulle meeldib nuppe vajutada. Kindlasti meeldib sulle ka mullikile!')">Vajuta
     siia!
 </button>
@@ -137,49 +144,61 @@ bla bla: إيان 76 bla bla. <-- ei lase numbrit märgi taha panna, vaid paneb 
 <br>
 
 
-<h3>< cite > tag</h3>
+<div class="maalid">
+    <h3>< cite > tag</h3>
 
-<p>Teose pealkiri</p>
-<img src="Pildid/VanGoghTheStarryNight.jpg">
+    <p>Teose pealkiri</p>
 
-<p><cite>The Starry Night</cite> Vincent Willem van Gogh. Painted in 1889.</p>
+    <div class="vanngohh">
+    <img id="vanngohh" src="Pildid/VanGoghTheStarryNight.jpg">
 
+    <p><cite>The Starry Night</cite> Vincent Willem van Gogh. Painted in 1889.</p>
+    </div>
 
-<h3>Phrase tags</h3>
-<table>
-    <tr>
-        <td>< code ></td>
-        <td><code>Tekstis eristatakse/tähistatakse programmi koodi sellise kirjatüübiga</code></td>
-    </tr>
-
-    <tr>
-        <td>< em ></td>
-        <td><em>Renders as emphasized text</em></td>
-    </tr>
+    <div class="kirsipuu">
+        <img id="kirsipuu" src="https://goo.gl/Sa2yzy">
+        <p><cite>Cherry Blossom</cite> Vincent Willem van Gogh.</p>
+    </div>
+</div>
 
 
-    <tr>
-        <td>< strong ></td>
-        <td><strong>Defines important text</strong></td>
-    </tr>
+<div id="taustapilt">
+    <h3>Phrase tags</h3>
+    <table>
+        <tr>
+            <td>< code ></td>
+            <td><code>Tekstis eristatakse/tähistatakse programmi koodi sellise kirjatüübiga</code></td>
+        </tr>
 
-    <tr>
-        <td>< samp ></td>
-        <td><samp>Defines sample output from a computer program</samp></td>
-    </tr>
+        <tr>
+            <td>< em ></td>
+            <td><em>Renders as emphasized text</em></td>
+        </tr>
 
-    <tr>
-        <td>< kbd ></td>
-        <td><kbd>Defines keyboard input</kbd></td>
-    </tr>
 
-    <tr>
-        <td>< var ></td>
-        <td><var>Defines a variable</var><br></td>
-    </tr>
+        <tr>
+            <td>< strong ></td>
+            <td><strong>Defines important text</strong></td>
+        </tr>
 
-</table>
-<b>Paks tekst on paks.</b>
+        <tr>
+            <td>< samp ></td>
+            <td><samp>Defines sample output from a computer program</samp></td>
+        </tr>
+
+        <tr>
+            <td>< kbd ></td>
+            <td><kbd>Defines keyboard input</kbd></td>
+        </tr>
+
+        <tr>
+            <td>< var ></td>
+            <td><var>Defines a variable</var><br></td>
+        </tr>
+
+    </table>
+    <b>Paks tekst on paks.</b>
+</div>
 
 
 <h3>< col > < colgroup > tag</h3>
@@ -213,25 +232,27 @@ bla bla: إيان 76 bla bla. <-- ei lase numbrit märgi taha panna, vaid paneb 
 </table>
 
 
-<h3>< input > < datalist > tagid</h3>
+<div class="raam">
+    <h3>< input > < datalist > tagid</h3>
 
-<p>The < datalist > tag specifies a list of pre-defined options for an < input > element.
-    The < datalist > tag is used to provide an "autocomplete" feature on < input > elements. Users will see a drop-down
-    list of pre-defined options as they input data.
-    Use the < input > element's list attribute to bind it together with a < datalist > element.</p>
+    <p>The < datalist > tag specifies a list of pre-defined options for an < input > element.
+        The < datalist > tag is used to provide an "autocomplete" feature on < input > elements. Users will see a
+        drop-down
+        list of pre-defined options as they input data.
+        Use the < input > element's list attribute to bind it together with a < datalist > element.</p>
 
-<form action="demo_form.asp" method="get">
-    <input list="v2rvid" name="v2rvid">
-    <datalist id="v2rvid">
-        <option value="Sinine">
-        <option value="Punane">
-        <option value="Kollane">
-        <option value="Roheline">
-        <option value="Must">
-    </datalist>
-    <input type="submit">
-</form>
-
+    <form action="demo_form.asp" method="get">
+        <input list="v2rvid" name="v2rvid">
+        <datalist id="v2rvid">
+            <option value="Sinine">
+            <option value="Punane">
+            <option value="Kollane">
+            <option value="Roheline">
+            <option value="Must">
+        </datalist>
+        <input type="submit">
+    </form>
+</div>
 
 <h3> < dd > < dl > < dt > tag</h3>
 
@@ -258,6 +279,7 @@ bla bla: إيان 76 bla bla. <-- ei lase numbrit märgi taha panna, vaid paneb 
 
 
 <h3>< details > < summary ></h3>
+
 <p>summary - detailide pealkiri, nähtav osa.</p>
 <details>
     <summary>Detailid.</summary>
@@ -323,13 +345,14 @@ bla bla: إيان 76 bla bla. <-- ei lase numbrit märgi taha panna, vaid paneb 
 
 <p>Teksti osa <i>r]hutamiseks</i>, kui pole muud sobivamat tag'i.</p>
 
+<div class="iframe">
+    <h3>< iframe ></h3>
 
-<h3>< iframe ></h3>
-
-<p>The < iframe > tag specifies an inline frame.</p>
-<iframe src="http://www.postimees.ee">
-    <p>Sinu brauser ei toeta iframe'i.</p>
-</iframe>
+    <p>The < iframe > tag specifies an inline frame.</p>
+    <iframe src="http://www.postimees.ee">
+        <p>Sinu brauser ei toeta iframe'i.</p>
+    </iframe>
+</div>
 
 
 <h3>< keygen ></h3>
@@ -445,12 +468,14 @@ bla bla: إيان 76 bla bla. <-- ei lase numbrit märgi taha panna, vaid paneb 
 <h3>< param > < object ></h3>
 
 <p>PANE SIIA AUDIOFAIL<br>
-    The < object > tag defines an embedded object within an HTML document.
-    Use this element to embed multimedia (like audio, video, Java applets,
-    ActiveX, PDF, and Flash) in your web pages</p>
-<object data="horse.wav">
+    The < object > tag defines an
+
+    <object class="video" data="horse.wav">
     <param name="autoplay" value="true">
 </object>
+    embedded object within an HTML document.
+    Use this element to embed multimedia (like audio, video, Java applets,
+    ActiveX, PDF, and Flash) in your web pages</p>
 
 
 <h3>< pre ></h3>
@@ -463,73 +488,97 @@ reavahed
 
 
 <h3>< sub > < sup ></h3>
+
 <p>Siin tekstis on <sub>alaindeks</sub>.</p>
+
 <p>Siin tekstis on <sup>ülaindeks</sup>.</p>
 
 
 <h3>< progress ></h3>
+
 <p>< progress > näitab nt mingi ülesande progressi, palju tehtud on</p>
 <progress value="35" max="100">
 </progress>
 
 
 <h3>< q ></h3>
+
 <p>Kasutatakse tsitaatide jaoks: < q >
-    <q>Taevast sajab laia lund!</q>  < /q >
-    </p>
+    <q>Taevast sajab laia lund!</q> < /q >
+</p>
 
 
 <h3>< s ></h3>
+
 <p> Kasutatakse siis, kui algne tekst ei ole enam õige, info on vananenud.</p>
+
 <p><s>Jüri ja Joosep</s> Mari ja Kadri elavad Tartus.</p>
 
 
 <h3>< section ></h3>
+
 <p>Tähistab teksti osasid, kas peatükke, päist, jalust või muud osa.</p>
 <section>
     <h4>Pealkiri</h4>
+
     <p>blablablablablablablablabalbalbalbalbalbalba
-    blablabalbalbalbalbalbalabalbalbalbalbalab</p>
+        blablabalbalbalbalbalbalabalbalbalbalbalab</p>
 </section>
 
 <section>
     <h4>Pealkiri 2</h4>
+
     <p>blablablablablbalbalbalbablalbablablablablablablablablbalbalbalbabla</p>
 </section>
 
 
 <h3>< small ></h3>
+
 <p>Teeb teksti väikseks.</p>
-<p><small>Näiteks kõrvalkommentaaride jaoks.</small></p>
+
+<p>
+    <small>Näiteks kõrvalkommentaaride jaoks.</small>
+</p>
 
 
 <h3>< u ></h3>
+
 <p>Tähistab teksti, mis peaks olema tavatekstist stiililiselt erinev, nt grammatiliselt mittekorrekte kiri vms.</p>
+
 <p>This is a <u>parragraph</u>.</p>
 
 
 <h3>< wbr ></h3>
-<p>Poolitab sõna just seal, kus see tag vahel on. Kasulik nt veebilehitseja akna suuruse muutmisel.</p>
-<p>This is a veryveryveryveryveryveryveryveryveryveryveryveryveryveryveryv
-    eryveryvery<wbr>longwordthatwillbreakatspecific<wbr>placeswhenthebrowserwindowisresized.</p>
 
+<p>Poolitab sõna just seal, kus see tag vahel on. Kasulik nt veebilehitseja akna suuruse muutmisel.</p>
+
+<p>This is a veryveryveryveryveryveryveryveryveryveryveryveryveryveryveryv
+    eryveryvery
+    <wbr>
+    longwordthatwillbreakatspecific
+    <wbr>
+    placeswhenthebrowserwindowisresized.
+</p>
 
 
 <h3>< span ></h3>
-<p>Kasutatakse inline-elementide grupeerimiseks, sellega saab muuta tekstis ära märgitud osa.</p>
-<p>Pätul on <span style="color:blue;font-weight:bold">sinine</span> pall ja Tukil on <span style="color:darkolivegreen;font-weight:bold">tumeroheline</span> pall.</p>
 
+<p>Kasutatakse inline-elementide grupeerimiseks, sellega saab muuta tekstis ära märgitud osa.</p>
+
+<p>Pätul on <span style="color:blue;font-weight:bold">sinine</span> pall ja Tukil on <span
+        style="color:darkolivegreen;font-weight:bold">tumeroheline</span> pall.</p>
 
 
 <h3>< style ></h3>
+
 <p>< style > tagide vahel määratakse dokumendi stiilielemendid, milline peab lehekülg välja nägema veebilehitsejas.</p>
+
 <p>< head ><br>
     < style ><br>
-        h1 {color:red;}<br>
-        p {color:blue;}<br>
+    h1 {color:red;}<br>
+    p {color:blue;}<br>
     < /style ><br>
-< /head ></p>
-
+    < /head ></p>
 
 
 <h3>< textarea ></h3>
@@ -542,20 +591,25 @@ The size of a text area can be specified by the cols and rows attributes, or eve
 </textarea>
 
 
+<h3>CSS overflow</h3>
+<div class="overflow">
+    <p>Töötukassa osapoolte vahel toimus eile aktiivne mõttevahetus.
+        Valitsus vahetas oma mõtted tööandjate mõtete vastu,
+        töövõtjad omakorda vahetasid oma mõtted valitsuse mõtete vastu
+        ja tööandjad vahetasid omavahel mõtted ära nii valitsuse kui töövõtjatega.
+        Kui mõttevahetus oli lõppenud, olid kõik mõtted omavahel vahetatud
+        ning kuna uusi mõtteid mõttevahetuse käigus ei toimunud ja
+        seisukohad jäid samaks, vahetades ainult omanikke, siis patiseis
+        töötukassas jätkub. Uus mõttevahetus toimub peagi.</p>
+</div>
 
 
 
-
-
-
-
-
-
-
-
-
-
-
+<div>
+    <p>z-index z-index z-index z-index z-index z-index z-index z-index z-index z-index z-index</p>
+<img class="z-index" src="http://goo.gl/ojz9IA">
+    <p>z-index z-index z-index z-index z-index z-index z-index z-index z-index z-index z-index</p>
+</div>
 
 <hr>
 <address>

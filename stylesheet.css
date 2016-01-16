@@ -1,0 +1,160 @@
+body {
+    background-image: url(http://goo.gl/trLfDr);
+    background-size: auto;
+    background-attachment: fixed;
+}
+
+
+h3 {
+    color: #940207;
+}
+
+.opacity {
+    background-color: palegreen;
+    opacity: 0.4;                   /* v'rv v]i muu element on teise elemendi peal, l'bipaistvust saab s'ttida. */
+}
+
+
+.taust {
+    border: 5px;
+    border-color: black;
+    border-style: dotted;
+    border-bottom: thick solid;
+    border-top-color: #489360;
+    border-top-width: 15px;
+    padding: 25px;
+    background: powderblue;
+    width: 50%;
+    box-shadow: 10px 10px 5px #940207;
+}
+
+
+#taustapilt {
+    border: 5px solid black;
+    border-bottom-right-radius: 4em;
+    padding: 35px;
+    background: url(http://goo.gl/Yfkufe);
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-size: 20%;
+    background-position: right;
+}
+
+
+.raam {
+    border-style: solid;
+    border-width: 14px 14px 14px 14px;
+    -moz-border-image: url(http://www.clipartbest.com/cliparts/4ib/8X6/4ib8X6big.png) 199 205 230 round repeat;
+    -webkit-border-image: url(http://www.clipartbest.com/cliparts/4ib/8X6/4ib8X6big.png) 199 205 230 round repeat;
+    -o-border-image: url(http://www.clipartbest.com/cliparts/4ib/8X6/4ib8X6big.png) 199 205 230 round repeat;
+    border-image: url(http://www.clipartbest.com/cliparts/4ib/8X6/4ib8X6big.png) 199 205 230 fill round;
+    border-image-repeat: repeat;
+    padding-bottom: 70px;
+    padding-right: 70px;
+}
+
+
+.relative {
+    position: relative;
+    width: 600px;
+    height: 450px;
+    border: 3px solid #fbbc05;
+    border-left-color: #ea4335;
+    border-right-color: #ea4335;
+    border-bottom-width: 10px;
+    display: block;
+    top: 70px;
+}
+
+.absolute {
+    position: absolute;
+    bottom: 70px;
+    left: 50px;
+    width: 500px;
+    height: 300px;
+    border: 3px solid #fbbc05;
+    border-bottom-color: #ea4335;
+    border-top-color: #ea4335;
+    border-bottom-left-radius: 5em;
+    border-bottom-right-radius: 5em;
+    border-top-left-radius: 5em;
+    border-top-right-radius: 5em;
+    padding-top: 10px;
+    padding-left: 30px;
+}
+
+.iframe {
+    clear: left;
+    margin: auto;
+}
+
+.maalid {
+    display: block;
+    margin-left: 20px;
+    margin-top: 30px;
+    margin-right: 40px;
+    margin-bottom: 50px;
+}
+
+.maalid:after {
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+#kirsipuu {
+    max-height: 50%;
+    max-width: 50%;
+}
+.kirsipuu {
+    float: right;
+    position: relative;
+    right: 100px;
+
+}
+
+.vanngohh {
+    float: left;
+    margin-left: 10px;
+}
+
+.overflow {
+    background-color: #f2e5f2;
+    width: 100px;
+    height: 100px;
+    overflow: scroll;
+    padding: 40px;
+}
+
+table {
+    visibility: visible;
+}
+
+.video {
+    vertical-align: text-top;
+}
+
+.z-index {
+    position: relative;
+    z-index: auto;
+}
+
+
+
+/*
+align-content	Specifies the alignment between the lines inside a flexible container when the items do not use all available space	3
+align-items	Specifies the alignment for items inside a flexible container	3
+align-self	Specifies the alignment for selected items inside a flexible container	3
+flex	Specifies the length of the item, relative to the rest	3
+flex-basis	Specifies the initial length of a flexible item	3
+flex-direction	Specifies the direction of the flexible items	3
+flex-flow	A shorthand property for the flex-direction and the flex-wrap properties	3
+flex-grow	Specifies how much the item will grow relative to the rest	3
+flex-shrink	Specifies how the item will shrink relative to the rest	3
+flex-wrap	Specifies whether the flexible items should wrap or not	3
+justify-content	Specifies the alignment between the items inside a flexible container when the items do not use all available space	3
+order
+overflow-x	Specifies whether or not to clip the left/right edges of the content, if it overflows the element's content area	3
+overflow-y	Specifies whether or not to clip the top/bottom edges of the content, if it overflows the element's content area	3
+
+*/
