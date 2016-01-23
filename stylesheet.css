@@ -136,16 +136,115 @@ table {
 
 .z-index {
     position: relative;
-    z-index: auto;
+    z-index: -1;
+}
+
+
+#flex {
+    width: 270px;
+    height: 250px;
+    border: 2px solid black;
+    display: -webkit-flex; /* Safari */
+    display: flex;
+}
+
+#flex div {
+    -webkit-flex: 1;  /* Safari 6.1+ */
+    -ms-flex: 1;  /* IE 10 */
+    flex: 1;
+}
+
+.pealk1 {
+    letter-spacing: 4px;
+}
+
+.pealk2 {
+    letter-spacing: -2px;
+}
+
+.tekst1 {
+    width: 400px;
+}
+
+.tekst2 {
+    line-height: 200%;
+    text-align: justify;
+    text-align-last: right;
+    text-indent: 50px;
+    text-transform: capitalize;
+    word-spacing: 30px;
+    text-decoration: overline;
+    text-shadow: 2px 2px 2px #80ab2f;
+    font: 15px arial, sans-serif;
+    font-size:large;
+    font-style: italic;
+}
+
+.tekst3 {
+    font-variant: small-caps;
+    font-weight: bold;
+}
+
+.tabel1 {
+    border-collapse: separate;
+    border-spacing: 10px;
+    caption-side: bottom;
+    empty-cells: hide;
+    table-layout: fixed;
+}
+
+.tabel1 td {
+    width: 100px;
+}
+
+.keyframe {
+    width: 200px;
+    height: 100px;
+    background: greenyellow;
+    position :relative;
+    -webkit-animation: mymove 4s infinite; /* Chrome, Safari, Opera */
+    animation: mymove 4s infinite;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mymove {
+    from {left: 0px;}
+    to {left: 150px;}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+    from {left: 0px;}
+    to {left: 150px;}
 }
 
 
 
+
 /*
+animation	A shorthand property for all the animation properties (except animation-play-state and animation-fill-mode)	3
+animation-delay	Specifies a delay for the start of an animation	3
+animation-direction	Specifies whether or not the animation should play in reverse on alternate cycles	3
+animation-duration	Specifies how many seconds or milliseconds an animation takes to complete one cycle	3
+animation-fill-mode	Specifies a style for the element when the animation is not playing (when it is finished, or when it has a delay)	3
+animation-iteration-count	Specifies the number of times an animation should be played	3
+animation-name	Specifies the name of the @keyframes animation	3
+animation-play-state	Specifies whether the animation is running or paused	3
+animation-timing-function	Specifies the speed curve of an animation
+
+overflow-wrap	Specifies whether or not the browser may break lines within words in order to prevent overflow (when a string is too long to fit its containing box)	3
+tab-size	Specifies the length of the tab-character	3
+text-combine-upright	Specifies the combination of multiple characters into the space of a single character	3
+white-space	Specifies how white-space inside an element is handled	1
+word-break	Specifies line breaking rules for non-CJK scripts	3
+word-wrap	Allows long, unbreakable words to be broken and wrap to the next line
+
+
+
+
 align-content	Specifies the alignment between the lines inside a flexible container when the items do not use all available space	3
 align-items	Specifies the alignment for items inside a flexible container	3
 align-self	Specifies the alignment for selected items inside a flexible container	3
-flex	Specifies the length of the item, relative to the rest	3
 flex-basis	Specifies the initial length of a flexible item	3
 flex-direction	Specifies the direction of the flexible items	3
 flex-flow	A shorthand property for the flex-direction and the flex-wrap properties	3

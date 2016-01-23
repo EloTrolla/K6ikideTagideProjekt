@@ -118,7 +118,7 @@
 <h3>< caption > tag</h3>
 
 <p>Tabeli pealkiri</p>
-<table border="1px solid black">
+<table class="tabel1" border="1px solid black">
     <caption>Tabeli pealkiri on see</caption>
     <thead>
     <tr>
@@ -130,14 +130,19 @@
     <tbody>
     <tr>
         <td>rida1</td>
-        <td>rida11</td>
+        <td>rida11rida11 rida11 rida11 rida11rida11</td>
+    </tr>
+
+    <tr>
+        <td>rida2</td>
+        <td></td>
     </tr>
     </tbody>
 
     <tfoot>
     <tr>
-        <td>rida2</td>
-        <td>rida22</td>
+        <td>rida3</td>
+        <td>rida33</td>
     </tr>
     </tfoot>
 </table>
@@ -150,13 +155,14 @@
     <p>Teose pealkiri</p>
 
     <div class="vanngohh">
-    <img id="vanngohh" src="Pildid/VanGoghTheStarryNight.jpg">
+        <img id="vanngohh" src="Pildid/VanGoghTheStarryNight.jpg">
 
-    <p><cite>The Starry Night</cite> Vincent Willem van Gogh. Painted in 1889.</p>
+        <p><cite>The Starry Night</cite> Vincent Willem van Gogh. Painted in 1889.</p>
     </div>
 
     <div class="kirsipuu">
         <img id="kirsipuu" src="https://goo.gl/Sa2yzy">
+
         <p><cite>Cherry Blossom</cite> Vincent Willem van Gogh.</p>
     </div>
 </div>
@@ -406,13 +412,6 @@
     <a href="/vlmidagi/">Veel midagi</a>
 </nav>
 
-<nav>
-    <a href=""></a>
-    <a href=""></a>
-    <a href=""></a>
-    <a href=""></a>
-</nav>
-
 
 <h3>< script > < noscript ></h3>
 
@@ -471,11 +470,12 @@
     The < object > tag defines an
 
     <object class="video" data="horse.wav">
-    <param name="autoplay" value="true">
-</object>
+        <param name="autoplay" value="true">
+    </object>
     embedded object within an HTML document.
     Use this element to embed multimedia (like audio, video, Java applets,
-    ActiveX, PDF, and Flash) in your web pages</p>
+    ActiveX, PDF, and Flash) in your web pages
+</p>
 
 
 <h3>< pre ></h3>
@@ -519,14 +519,14 @@ reavahed
 
 <p>Tähistab teksti osasid, kas peatükke, päist, jalust või muud osa.</p>
 <section>
-    <h4>Pealkiri</h4>
+    <h4 class="pealk1">Pealkiri</h4>
 
     <p>blablablablablablablablabalbalbalbalbalbalba
         blablabalbalbalbalbalbalabalbalbalbalbalab</p>
 </section>
 
 <section>
-    <h4>Pealkiri 2</h4>
+    <h4 class="pealk2">Pealkiri 2</h4>
 
     <p>blablablablablbalbalbalbablalbablablablablablablablablbalbalbalbabla</p>
 </section>
@@ -592,6 +592,7 @@ The size of a text area can be specified by the cols and rows attributes, or eve
 
 
 <h3>CSS overflow</h3>
+
 <div class="overflow">
     <p>Töötukassa osapoolte vahel toimus eile aktiivne mõttevahetus.
         Valitsus vahetas oma mõtted tööandjate mõtete vastu,
@@ -604,12 +605,37 @@ The size of a text area can be specified by the cols and rows attributes, or eve
 </div>
 
 
-
 <div>
     <p>z-index z-index z-index z-index z-index z-index z-index z-index z-index z-index z-index</p>
-<img class="z-index" src="http://goo.gl/ojz9IA">
+    <img class="z-index" src="http://goo.gl/CDlwm1">
+
     <p>z-index z-index z-index z-index z-index z-index z-index z-index z-index z-index z-index</p>
 </div>
+
+
+
+<div id="flex">
+    <div style="background-color:coral;">flex venitab </div>
+    <div style="background-color:lightblue;">div osa</div>
+    <div style="background-color:lightgreen;">pikemaks kui selle sees olev tekst nt.</div>
+</div>
+
+
+
+<div class="tekst1"><p class="tekst2">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. A alias autem consectetur corporis earum eos est molestiae
+    provident ullam veniam. Ad eveniet exercitationem iure molestiae natus nulla quidem rem tempore. Lorem ipsum dolor
+    sit amet, consectetur adipisicing elit. <span class="tekst3">Architecto consequuntur dicta dignissimos eius eos fuga fugiat fugit molestias
+    nam nemo, omnis placeat quisquam reiciendis repudiandae rerum velit veniam voluptatem voluptatum?</span>
+</p></div>
+
+
+<div class="keyframe"></div>
+
+
+
+
+
 
 <hr>
 <address>
@@ -618,6 +644,9 @@ The size of a text area can be specified by the cols and rows attributes, or eve
     Kursus VS15<br>
     2015
 </address>
+
+
+
 
 </body>
 </html>
