@@ -164,6 +164,7 @@ table {
 
 .tekst1 {
     width: 400px;
+
 }
 
 .tekst2 {
@@ -178,11 +179,31 @@ table {
     font: 15px arial, sans-serif;
     font-size:large;
     font-style: italic;
+    -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+    -webkit-column-gap: 70px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 70px; /* Firefox */
+    column-gap: 70px;
+    -webkit-column-rule-style: dotted; /* Chrome, Safari, Opera */
+    -moz-column-rule-style: dotted; /* Firefox */
+    column-rule-style: dotted;
+    -webkit-column-rule-color: #ff0000; /* Chrome, Safari, Opera */
+    -moz-column-rule-color: #ff0000; /* Firefox */
+    column-rule-color: #ff0000;
+    -webkit-column-rule-width: 4px; /* Chrome, Safari, Opera */
+    -moz-column-rule-width: 4px; /* Firefox */
+    column-rule-width: 4px;
+
+
 }
 
 .tekst3 {
     font-variant: small-caps;
     font-weight: bold;
+    quotes: "«" "»" "‹" "›";
+
+
 }
 
 .tabel1 {
@@ -202,58 +223,67 @@ table {
     height: 100px;
     background: greenyellow;
     position :relative;
-    -webkit-animation: mymove 4s infinite; /* Chrome, Safari, Opera */
-    animation: mymove 4s infinite;
+    -webkit-animation: infinite; /* Chrome, Safari, Opera */
+    animation: infinite;
+    -webkit-animation-direction: alternate; /* Chrome, Safari, Opera */
+    animation-direction: alternate;
+    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+    animation-duration: 4s;
+    -webkit-animation-name: kast; /* Chrome, Safari, Opera */
+    animation-name: kast;
 }
 
-/* Chrome, Safari, Opera */
-@-webkit-keyframes mymove {
+@-webkit-keyframes kast {        /* Chrome, Safari, Opera */
     from {left: 0px;}
     to {left: 150px;}
 }
 
-/* Standard syntax */
-@keyframes mymove {
+@keyframes kast {             /* Standard syntax */
     from {left: 0px;}
     to {left: 150px;}
 }
 
+.keerukuju {
+    margin: auto;
+    width: 200px;
+    height: 100px;
+    background-color: palevioletred;
+    color: white;
+    -webkit-animation: keerukuju 5s infinite; /* Chrome, Safari, Opera */
+    animation: keerukuju 5s infinite;
+}
+
+@-webkit-keyframes keerukuju {              /* Chrome, Safari, Opera */
+    70% {-webkit-transform: rotate(1200deg);}
+}
+
+@keyframes keerukuju {                      /* Standard syntax */
+    70% {transform: rotate(200deg);}
+}
+
+.juhh {
+    text-align: center;
+    font-size: larger;
+    padding-top: 40px;
+}
 
 
+.borderbox {
+    width: 300px;
+    height: 100px;
+    padding: 30px;
+    border: 1px solid red;
+    box-sizing: border-box;
+    cursor:cell;
+    outline-style: dotted;
+    outline-color: blueviolet;
+    outline-width: thick;
+    outline-offset: 15px;
+    resize: both;
+    overflow: auto;
 
-/*
-animation	A shorthand property for all the animation properties (except animation-play-state and animation-fill-mode)	3
-animation-delay	Specifies a delay for the start of an animation	3
-animation-direction	Specifies whether or not the animation should play in reverse on alternate cycles	3
-animation-duration	Specifies how many seconds or milliseconds an animation takes to complete one cycle	3
-animation-fill-mode	Specifies a style for the element when the animation is not playing (when it is finished, or when it has a delay)	3
-animation-iteration-count	Specifies the number of times an animation should be played	3
-animation-name	Specifies the name of the @keyframes animation	3
-animation-play-state	Specifies whether the animation is running or paused	3
-animation-timing-function	Specifies the speed curve of an animation
+}
 
-overflow-wrap	Specifies whether or not the browser may break lines within words in order to prevent overflow (when a string is too long to fit its containing box)	3
-tab-size	Specifies the length of the tab-character	3
-text-combine-upright	Specifies the combination of multiple characters into the space of a single character	3
-white-space	Specifies how white-space inside an element is handled	1
-word-break	Specifies line breaking rules for non-CJK scripts	3
-word-wrap	Allows long, unbreakable words to be broken and wrap to the next line
-
-
-
-
-align-content	Specifies the alignment between the lines inside a flexible container when the items do not use all available space	3
-align-items	Specifies the alignment for items inside a flexible container	3
-align-self	Specifies the alignment for selected items inside a flexible container	3
-flex-basis	Specifies the initial length of a flexible item	3
-flex-direction	Specifies the direction of the flexible items	3
-flex-flow	A shorthand property for the flex-direction and the flex-wrap properties	3
-flex-grow	Specifies how much the item will grow relative to the rest	3
-flex-shrink	Specifies how the item will shrink relative to the rest	3
-flex-wrap	Specifies whether the flexible items should wrap or not	3
-justify-content	Specifies the alignment between the items inside a flexible container when the items do not use all available space	3
-order
-overflow-x	Specifies whether or not to clip the left/right edges of the content, if it overflows the element's content area	3
-overflow-y	Specifies whether or not to clip the top/bottom edges of the content, if it overflows the element's content area	3
-
-*/
+.kop:before {
+    content: "Loe seda: -";
+}
