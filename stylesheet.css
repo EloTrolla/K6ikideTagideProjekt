@@ -287,3 +287,28 @@ table {
 .kop:before {
     content: "Loe seda: -";
 }
+
+.whitespace {
+    white-space:nowrap;
+    height: 100px;
+    width: 200px;
+    border: dashed;
+}
+
+.wordwrap {
+    word-wrap: break-word;
+    height: 250px;
+    width: 200px;
+    border: dashed;
+}
+
+.hyphens {
+    height: 250px;
+    width: 200px;
+    border: dashed;
+    -ms-word-break: break-all;
+    word-break: break-all;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
+}
