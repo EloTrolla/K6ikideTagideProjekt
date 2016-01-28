@@ -306,9 +306,8 @@ table {
     height: 250px;
     width: 200px;
     border: dashed;
-    -ms-word-break: break-all;
-    word-break: break-all;
-    -webkit-hyphens: auto;
-    -moz-hyphens: auto;
-    hyphens: auto;
+    text-align: left;
+    -webkit-hyphens: manual;
+    -moz-hyphens: manual;
+    hyphens: manual;
 }
